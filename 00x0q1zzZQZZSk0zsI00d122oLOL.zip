@@ -1,0 +1,12 @@
+local games = {
+    [{537413528}] = "https://raw.githubusercontent.com/JackyPoopoo/cartel/main/0x11x001000x1110000000000000000000000000000000000000000000000000000000000000000000000000000.lua.lua",
+    [{286090429}] = "https://raw.githubusercontent.com/JackyPoopoo/cartel/main/0000000000000000000000000000000000000000000000000",
+    [{4639625707}] = "https://raw.githubusercontent.com/JackyPoopoo/cartel/main/gds872236r5resy969rea69g7tqe62r2t67wer69vfgsd99ts7tda.lua",
+}
+
+for ids, url in next, games do
+    if table.find(ids, game.PlaceId) then
+        loadstring(game:HttpGet(url))()
+        break
+    end
+end
